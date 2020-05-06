@@ -37,7 +37,9 @@
     "e2e-initial-render": "nightwatch test/e2e/scenarios/ --config test/e2e/nightwatch.json --group initial-render",
     "mock-api": "json-server --watch test/e2e/db.json --port 3204",
     "hot-e2e-server": "webpack-dev-server --content-base test/e2e/helpers --host 0.0.0.0 --config webpack-hot-dev-server.config.js --inline --hot --progress",
-    "e2e": "npm-run-all --parallel -r hot-e2e-server mock-api test-e2e"
+    "e2e": "npm-run-all --parallel -r hot-e2e-server mock-api test-e2e",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@braintree/sanitize-url": "^2.0.2",
@@ -90,7 +92,8 @@
     "xml": "1.0.1",
     "xml-but-prettier": "^1.0.1",
     "yaml-js": "0.2.0",
-    "zenscroll": "4.0.1"
+    "zenscroll": "4.0.1",
+    "snyk": "^1.319.0"
   },
   "devDependencies": {
     "autoprefixer": "7.1.1",
@@ -165,5 +168,6 @@
     "include": [
       "**/src/core/plugins/**.js"
     ]
-  }
+  },
+  "snyk": true
 }
