@@ -40,7 +40,7 @@
     "e2e": "npm-run-all --parallel -r hot-e2e-server mock-api test-e2e"
   },
   "dependencies": {
-    "@braintree/sanitize-url": "^2.0.2",
+    "@braintree/sanitize-url": "^6.0.1",
     "base64-js": "^1.2.0",
     "brace": "0.7.0",
     "classnames": "^2.2.5",
