@@ -52,7 +52,7 @@
     "getbase": "^2.8.2",
     "ieee754": "^1.1.8",
     "immutable": "^3.x.x",
-    "js-yaml": "^3.5.5",
+    "js-yaml": "^4.1.1",
     "lodash": "4.17.5",
     "matcher": "^0.1.2",
     "memoizee": "0.4.1",
